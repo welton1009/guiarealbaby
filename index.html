@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Como atravessar o primeiro ano do bebê sem surtar — Oferta</title>
+  <meta name="description" content="Guia prático (0 a 12 meses) para dormir melhor, entender choros, rotina real e reduzir ansiedade no primeiro ano do bebê. Oferta limitada por tempo." />
+
+  <!-- Importante para GitHub Pages em subpasta (repo pages) -->
+  <base href="./" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #F7F7F7;
+      --white:#FFFFFF;
+      --text:#1E1E1E;
+      --muted: rgba(30,30,30,.70);
+
+      --beige:#EFEAE4;
+      --blue:#4A90E2;
+      --green:#2ECC71;
+
+      --shadow: 0 22px 70px rgba(18,18,18,.10);
+      --shadow2: 0 16px 40px rgba(18,18,18,.12);
+
+      --radius: 22px;
+
+      /* Neon accents (soft) */
+      --neon-blue: rgba(74,144,226,.45);
+      --neon-green: rgba(46,204,113,.45);
+      --neon-violet: rgba(155, 81, 224, .26);
+
+      /* Urgency red */
+      --red: #E53935;
+      --yellow: #FFD54F;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(800px 420px at 15% 10%, var(--neon-blue), transparent 55%),
+        radial-gradient(900px 520px at 85% 25%, var(--neon-green), transparent 60%),
+        radial-gradient(1000px 600px at 50% 95%, var(--neon-violet), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+
+    a{color:inherit; text-decoration:none}
+    .container{
+      width:min(1120px, calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    /* Top bar */
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:60;
+      background: rgba(247,247,247,.78);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(30,30,30,.08);
+    }
+    .topbarInner{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      padding:12px 0;
+      gap:10px;
+      text-align:center;
+    }
+    .brand{
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      font-weight:800;
+      font-family:Poppins, Inter;
+      letter-spacing:-.3px;
+    }
+    .brandDot{
+      width:12px; height:12px; border-radius:99px;
+      background: var(--blue);
+      box-shadow: 0 0 0 6px rgba(74,144,226,.12);
+    }
+    .miniTrust{
+      display:flex; gap:10px; flex-wrap:wrap;
+      color: var(--muted);
+      font-size: 12.5px;
+      justify-content:center;
+    }
+    .miniTrust span{
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.75);
+      border: 1px solid rgba(30,30,30,.08);
+    }
+
+    /* Hero */
+    .hero{
+      padding:26px 0 18px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.06fr .94fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    @media(max-width: 920px){
+      .heroGrid{grid-template-columns:1fr; gap:16px;}
+    }
+
+    .panel{
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(30,30,30,.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      position:relative;
+      overflow:hidden;
+    }
+    .panel::before{
+      content:"";
+      position:absolute; inset:-2px;
+      border-radius: calc(var(--radius) + 2px);
+      background: linear-gradient(90deg, rgba(74,144,226,.22), rgba(46,204,113,.18), rgba(155,81,224,.12));
+      opacity:.45;
+      filter: blur(14px);
+      pointer-events:none;
+    }
+    .panelInner{position:relative; padding:22px;}
+
+    h1{
+      font-family:Poppins, Inter;
+      line-height:1.05;
+      letter-spacing:-1px;
+      margin:0 0 12px;
+      font-size: clamp(30px, 3.3vw, 54px);
+    }
+
+    .sub{
+      margin:0 0 16px;
+      font-size: clamp(14.5px, 1.2vw, 17px);
+      color: var(--muted);
+      line-height:1.5;
+    }
+
+    .badgeRow{display:flex; flex-wrap:wrap; gap:10px; margin: 14px 0 14px;}
+    .badge{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 12px;
+      border-radius: 14px;
+      background: rgba(239,234,228,.82);
+      border: 1px solid rgba(30,30,30,.08);
+      color: rgba(30,30,30,.82);
+      font-size: 13px;
+    }
+    .ico3d{
+      width:34px; height:34px;
+      border-radius: 14px;
+      display:flex; align-items:center; justify-content:center;
+      background: linear-gradient(180deg, #fff, #f0f0f0);
+      border: 1px solid rgba(30,30,30,.10);
+      box-shadow: 0 16px 30px rgba(18,18,18,.12);
+      transform: translateZ(0);
+      position:relative;
+      flex: 0 0 auto;
+    }
+    .ico3d span{
+      font-size: 18px;
+      filter: drop-shadow(0 10px 10px rgba(18,18,18,.20));
+    }
+    .ico3d::after{
+      content:"";
+      position:absolute; inset:-1px;
+      border-radius: 14px;
+      background: linear-gradient(120deg, rgba(74,144,226,.35), rgba(46,204,113,.25));
+      opacity:.20;
+      filter: blur(8px);
+      pointer-events:none;
+    }
+
+    /* Price */
+    .priceBox{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:18px;
+      padding:16px 16px;
+      border-radius: 18px;
+      background: rgba(239,234,228,.72);
+      border: 1px solid rgba(30,30,30,.08);
+      margin: 14px 0 12px;
+    }
+    .priceLeft small{display:block; color: rgba(30,30,30,.60); margin-bottom:6px;}
+    .strike{font-size: 14px; color: rgba(30,30,30,.55); text-decoration: line-through;}
+    .now{
+      font-family:Poppins, Inter;
+      font-size: 34px;
+      letter-spacing:-.6px;
+      margin: 4px 0 0;
+    }
+    .save{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px;
+      border-radius: 14px;
+      background: rgba(74,144,226,.10);
+      border: 1px solid rgba(74,144,226,.18);
+      color: rgba(30,30,30,.82);
+      white-space:nowrap;
+      font-size: 13px;
+    }
+
+    /* Mid image after offer */
+    .midOfferImg{
+      margin: 10px 0 6px;
+      border-radius: 18px;
+      overflow:hidden;
+      border: 1px solid rgba(30,30,30,.08);
+      box-shadow: var(--shadow2);
+      background: rgba(255,255,255,.7);
+    }
+    .midOfferImg img{
+      display:block;
+      width:100%;
+      height:auto;
+      object-fit:cover;
+      max-height: 280px;
+    }
+
+    /* Countdown */
+    .countWrap{
+      margin-top: 14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      padding:12px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid rgba(30,30,30,.08);
+    }
+    .countWrap strong{
+      font-family:Poppins,Inter;
+      letter-spacing:-.2px;
+    }
+    .timer{
+      font-family:Poppins,Inter;
+      font-weight:800;
+      background: var(--red);
+      color: #fff;
+      padding:8px 10px;
+      border-radius: 14px;
+      min-width: 118px;
+      text-align:center;
+      box-shadow: 0 18px 55px rgba(229,57,53,.22);
+      border: 1px solid rgba(0,0,0,.08);
+    }
+
+    /* CTA */
+    .ctaRow{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+      margin-top: 10px;
+    }
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:14px 18px;
+      border-radius: 16px;
+      background: var(--green);
+      color:#0b2816;
+      font-weight: 800;
+      font-family: Poppins, Inter;
+      letter-spacing:-.2px;
+      box-shadow:
+        0 24px 60px rgba(46,204,113,.25),
+        0 0 0 6px rgba(46,204,113,.12);
+      border: 1px solid rgba(0,0,0,.08);
+      transform: translateZ(0);
+      animation: glow 1.8s ease-in-out infinite;
+    }
+    @keyframes glow{
+      0%,100%{ filter: brightness(1); }
+      50%{ filter: brightness(1.06); }
+    }
+
+    .ctaSub{
+      font-size:12.5px;
+      color: rgba(30,30,30,.66);
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top: 8px;
+    }
+    .ctaSub span{
+      padding:6px 10px; border-radius:999px;
+      background: rgba(255,255,255,.70);
+      border: 1px solid rgba(30,30,30,.08);
+    }
+
+    /* Art panel */
+    .artInner{padding: 0;}
+    .artWrap{
+      position:relative;
+      overflow:hidden;
+      border-radius: var(--radius);
+      aspect-ratio: 9 / 10;
+      min-height: 360px;
+      background:
+        radial-gradient(600px 360px at 20% 20%, rgba(74,144,226,.18), transparent 60%),
+        radial-gradient(600px 360px at 80% 80%, rgba(46,204,113,.14), transparent 60%),
+        rgba(255,255,255,.6);
+    }
+    .heroArt{
+      width:100%;
+      height:100%;
+      object-fit: contain;
+      display:block;
+      padding: 18px;
+      filter: drop-shadow(0 28px 50px rgba(18,18,18,.18));
+      animation: floaty 3.4s ease-in-out infinite;
+    }
+    @keyframes floaty{
+      0%,100%{ transform: translateY(0); }
+      50%{ transform: translateY(-8px); }
+    }
+
+    /* Red rectangular note */
+    .artNote{
+      margin: 14px 16px 16px;
+      padding: 14px 14px;
+      border-radius: 18px;
+      background: var(--red);
+      color: #fff;
+      line-height:1.45;
+      border: 1px solid rgba(0,0,0,.08);
+      box-shadow: 0 18px 55px rgba(229,57,53,.20);
+      font-size: 13.5px;
+    }
+    .artNote b{color: var(--yellow); font-family:Poppins,Inter; letter-spacing:-.2px;}
+
+    /* Sections */
+    .section{ padding: 18px 0 8px; }
+    .sectionTitle{
+      font-family:Poppins,Inter;
+      letter-spacing:-.4px;
+      margin: 0 0 12px;
+      font-size: clamp(22px, 2.2vw, 32px);
+    }
+
+    .grid2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items:stretch;
+    }
+    @media(max-width: 920px){ .grid2{grid-template-columns:1fr;} }
+
+    .card{
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(30,30,30,.08);
+      border-radius: 18px;
+      box-shadow: var(--shadow2);
+      padding: 16px;
+      position:relative;
+      overflow:hidden;
+      backdrop-filter: blur(12px);
+    }
+    .card::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: linear-gradient(90deg, rgba(74,144,226,.14), rgba(46,204,113,.12));
+      opacity:.25;
+      filter: blur(14px);
+      pointer-events:none;
+    }
+    .card > *{position:relative}
+    .card h3{
+      margin: 2px 0 8px;
+      font-family:Poppins,Inter;
+      letter-spacing:-.2px;
+      font-size: 18px;
+    }
+    .card p{
+      margin:0;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 14.5px;
+    }
+
+    .list{
+      display:grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .li{
+      display:flex;
+      gap: 12px;
+      align-items:flex-start;
+      padding: 12px 12px;
+      border-radius: 16px;
+      background: rgba(239,234,228,.72);
+      border: 1px solid rgba(30,30,30,.08);
+    }
+    .li b{font-family:Poppins,Inter}
+    .li span.txt{
+      color: rgba(30,30,30,.78);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    /* Checklist buttons */
+    .toggleBtn{
+      margin-top: 12px;
+      width: 100%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      padding: 12px 12px;
+      border-radius: 16px;
+      background: rgba(74,144,226,.10);
+      border: 1px solid rgba(74,144,226,.18);
+      font-family:Poppins,Inter;
+      font-weight:800;
+      cursor:pointer;
+      color: rgba(30,30,30,.90);
+      user-select:none;
+    }
+    .toggleBtn span.small{
+      font-family: Inter, system-ui;
+      font-weight: 600;
+      font-size: 12.5px;
+      color: rgba(30,30,30,.65);
+    }
+    .toggleBtn .arrow{transition: transform .18s ease}
+    .toggleBtn[aria-expanded="true"] .arrow{transform: rotate(180deg)}
+
+    .toggleBox{
+      margin-top: 10px;
+      display:none;
+      padding: 12px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid rgba(30,30,30,.08);
+    }
+    .toggleBox ul{
+      margin: 0;
+      padding-left: 18px;
+      color: rgba(30,30,30,.78);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+    .toggleBox li{margin: 6px 0}
+
+    /* Video section */
+    .videoBox{
+      border-radius: 18px;
+      overflow:hidden;
+      border: 1px solid rgba(30,30,30,.08);
+      box-shadow: var(--shadow2);
+      background: rgba(255,255,255,.82);
+    }
+    .videoFrame{
+      width:100%;
+      aspect-ratio: 16/9;
+      position:relative;
+    }
+    .videoFrame iframe{
+      position:absolute; inset:0;
+      width:100%; height:100%;
+      border:0;
+    }
+    .videoCaption{padding: 14px 16px; color: var(--muted); font-size: 14px;}
+
+    /* Feedbacks */
+    .reviews{
+      display:grid;
+      gap: 12px;
+    }
+    .reviewCard{
+      background: rgba(255,255,255,.86);
+      border: 1px solid rgba(30,30,30,.08);
+      border-radius: 18px;
+      box-shadow: var(--shadow2);
+      padding: 14px 14px;
+    }
+    .reviewTop{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      margin-bottom: 8px;
+    }
+    .stars{
+      letter-spacing: 1px;
+      color: rgba(30,30,30,.9);
+      font-weight: 800;
+      font-family:Poppins,Inter;
+    }
+    .reviewCard p{
+      margin: 0;
+      color: rgba(30,30,30,.72);
+      line-height: 1.55;
+      font-size: 14.5px;
+    }
+    .reviewCard b{font-family:Poppins,Inter}
+
+    /* FAQ */
+    details{
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(30,30,30,.08);
+      border-radius: 18px;
+      padding: 12px 14px;
+      box-shadow: var(--shadow2);
+    }
+    summary{
+      cursor:pointer;
+      font-family:Poppins,Inter;
+      font-weight:700;
+      letter-spacing:-.2px;
+      list-style:none;
+      outline:none;
+    }
+    summary::-webkit-details-marker{display:none}
+    details p{
+      margin: 10px 0 0;
+      color: var(--muted);
+      line-height:1.55;
+      font-size: 14.5px;
+    }
+    .faqGrid{display:grid; gap: 12px;}
+
+    /* Sticky buy bar */
+    .stickyBuy{
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      background: rgba(247,247,247,.86);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(30,30,30,.10);
+      padding: 10px 0;
+      z-index: 90;
+    }
+    .stickyInner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+    }
+    .stickText{
+      display:flex;
+      gap: 12px;
+      align-items:center;
+      min-width: 0;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(239,234,228,.78);
+      border: 1px solid rgba(30,30,30,.08);
+      font-size: 12.5px;
+      color: rgba(30,30,30,.78);
+      white-space:nowrap;
+    }
+    .stickTitle{
+      font-family:Poppins,Inter;
+      font-weight:800;
+      letter-spacing:-.2px;
+      font-size: 13.5px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      max-width: 48vw;
+    }
+    .stickCTA{
+      display:inline-flex;
+      align-items:center; justify-content:center;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: var(--green);
+      font-family:Poppins,Inter;
+      font-weight: 800;
+      border: 1px solid rgba(0,0,0,.08);
+      box-shadow: 0 18px 55px rgba(46,204,113,.22);
+      white-space:nowrap;
+    }
+
+    /* “Live” activity */
+    .liveHUD{ position: fixed; top: 86px; left: 14px; z-index: 80; }
+    .liveBadge{
+      display:flex; align-items:center; gap:10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.90);
+      border: 1px solid rgba(30,30,30,.08);
+      box-shadow: 0 18px 55px rgba(18,18,18,.12);
+      backdrop-filter: blur(12px);
+      font-size: 12.5px;
+      color: rgba(30,30,30,.78);
+    }
+    .dot{
+      width:10px; height:10px; border-radius:99px;
+      background: var(--green);
+      box-shadow: 0 0 0 6px rgba(46,204,113,.18);
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+
+    .toastStack{
+      position: fixed;
+      left: 14px;
+      bottom: 92px;
+      display: grid;
+      gap: 10px;
+      z-index: 80;
+      width: min(360px, calc(100vw - 28px));
+    }
+    .toast{
+      background: rgba(255,255,255,.90);
+      border: 1px solid rgba(30,30,30,.08);
+      border-radius: 18px;
+      padding: 12px 12px;
+      box-shadow: 0 22px 70px rgba(18,18,18,.14);
+      backdrop-filter: blur(12px);
+      display:flex;
+      gap: 10px;
+      align-items:flex-start;
+      transform: translateY(8px);
+      opacity: 0;
+      animation: toastIn .35s ease forwards;
+    }
+    @keyframes toastIn{to{opacity:1; transform:translateY(0)}}
+    .toast .miniIco{
+      width: 40px; height: 40px; border-radius: 14px;
+      display:flex; align-items:center; justify-content:center;
+      background: linear-gradient(180deg, #ffffff, #f0f0f0);
+      border: 1px solid rgba(30,30,30,.10);
+      box-shadow: 0 14px 26px rgba(18,18,18,.12);
+    }
+    .toast .miniIco span{font-size:18px; filter: drop-shadow(0 6px 8px rgba(18,18,18,.22));}
+    .toast .txt{line-height:1.25}
+    .toast .txt b{font-family:Poppins,Inter; font-size: 13.5px; color: rgba(30,30,30,.92)}
+    .toast .txt p{margin:4px 0 0; font-size: 12.5px; color: rgba(30,30,30,.72)}
+    .toast .txt small{display:block; margin-top:6px; font-size: 11.5px; color: rgba(30,30,30,.58)}
+
+    /* Footer */
+    .foot{
+      padding: 18px 0 90px;
+      color: rgba(30,30,30,.60);
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+    .divider{
+      height:1px;
+      background: rgba(30,30,30,.08);
+      margin: 16px 0;
+    }
+    .center{ text-align:center; }
+
+    /* Final image */
+    .finalImg{
+      margin-top: 12px;
+      border-radius: 18px;
+      overflow:hidden;
+      border: 1px solid rgba(30,30,30,.08);
+      box-shadow: var(--shadow2);
+      background: rgba(255,255,255,.7);
+    }
+    .finalImg img{
+      display:block;
+      width:100%;
+      height:auto;
+      object-fit:cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="topbarInner">
+        <div class="brand"><span class="brandDot"></span> Guia 0–12 Meses</div>
+        <div class="miniTrust">
+          <span>Leitura rápida e prática</span>
+          <span>Sem “maternidade perfeita”</span>
+          <span>Foco no cotidiano brasileiro</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live activity -->
+  <div class="liveHUD" aria-label="Atividade">
+    <div class="liveBadge">
+      <span class="dot"></span>
+      <span><b id="liveVisitors">—</b> pessoas vendo agora</span>
+    </div>
+  </div>
+  <div class="toastStack" id="toastStack" aria-live="polite" aria-atomic="true"></div>
+
+  <header class="hero">
+    <div class="container">
+      <div class="heroGrid">
+
+        <!-- Copy / Offer -->
+        <div class="panel">
+          <div class="panelInner">
+            <h1>Como atravessar o primeiro ano do seu bebê <span style="color:var(--blue)">sem surtar</span></h1>
+            <p class="sub">
+              Um guia direto, humano e aplicável pra você parar de “adivinhar tudo” e ter mais controle do básico:
+              sono, choros, rotina, crise de exaustão, culpa e aquele medo constante de estar fazendo errado.
+            </p>
+
+            <div class="badgeRow">
+              <div class="badge">
+                <div class="ico3d"><span>😴</span></div>
+                <div><b>Sono</b><br><span style="color:var(--muted)">sem receita mágica</span></div>
+              </div>
+              <div class="badge">
+                <div class="ico3d"><span>🍼</span></div>
+                <div><b>Rotina real</b><br><span style="color:var(--muted)">0 a 12 meses</span></div>
+              </div>
+              <div class="badge">
+                <div class="ico3d"><span>🧠</span></div>
+                <div><b>Menos ansiedade</b><br><span style="color:var(--muted)">mais clareza</span></div>
+              </div>
+            </div>
+
+            <div class="priceBox">
+              <div class="priceLeft">
+                <small>Oferta relâmpago (por tempo)</small>
+                <div class="strike">de R$ 97,00</div>
+                <div class="now">R$ 19,90</div>
+              </div>
+              <div class="save">Você economiza R$ 77,10</div>
+            </div>
+
+            <div class="midOfferImg">
+              <img src="https://linguistic-azure-flqk0kenvi.edgeone.app/IMG_1542.png" alt="Imagem do guia" />
+            </div>
+
+            <div class="countWrap">
+              <div>
+                <strong>O desconto some quando o tempo acabar.</strong><br>
+                <span style="color:var(--muted); font-size:13px">Se você sair, o cronômetro continua.</span>
+              </div>
+              <div class="timer" id="timer">30:00</div>
+            </div>
+
+            <div class="ctaRow">
+              <a class="cta" href="https://pay.hotmart.com/Q103640342H" target="_blank" rel="noopener">
+                Quero garantir por R$ 19,90 <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <div class="ctaSub">
+              <span>Entrega imediata</span>
+              <span>Acesso no celular</span>
+              <span>Compra segura</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Art -->
+        <div class="panel artInner">
+          <div class="artWrap">
+            <img class="heroArt" src="https://linguistic-azure-flqk0kenvi.edgeone.app/IMG_1542.png" alt="Ilustração 3D família" />
+          </div>
+
+          <div class="artNote">
+            <b>SEM PAPO DE “PAIS PERFEITOS”.</b>
+            É o tipo de guia que você lê e pensa:
+            “beleza, agora eu sei o que fazer quando isso acontecer de novo”.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2 class="sectionTitle">Se isso aqui está acontecendo… esse guia é pra você.</h2>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>🧷 A noite vira um looping</h3>
+            <p>Você deita, o bebê acorda. Você dorme 10 min, ele chora. A casa fica silenciosa e seu cérebro liga o modo “pânico”.</p>
+
+            <button class="toggleBtn" type="button" data-toggle="check1" aria-expanded="false">
+              Abrir checklist da noite <span class="small">o que fazer em ordem</span>
+              <span class="arrow">▾</span>
+            </button>
+            <div class="toggleBox" id="check1">
+              <ul>
+                <li>Baixe luz e estímulos (sem TV/voz alta) por 10–15 min.</li>
+                <li>Cheque básico: fralda, temperatura, posição confortável.</li>
+                <li>Ritual curto: colo + som leve (sempre igual).</li>
+                <li>Se chorou, volte para “1 item por vez” (não misture tudo).</li>
+                <li>Se repetiu por horas, anote padrão e ajuste no dia seguinte.</li>
+              </ul>
+            </div>
+
+            <div class="list">
+              <div class="li">
+                <div class="ico3d"><span>🌙</span></div>
+                <span class="txt"><b>Você não tem rotina</b> — só “sobrevivência”. E isso drena tudo.</span>
+              </div>
+              <div class="li">
+                <div class="ico3d"><span>📉</span></div>
+                <span class="txt"><b>Você perde a noção do dia</b> e começa a achar que “não dá conta”.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>🧨 Você se sente perdido com o choro</h3>
+            <p>Você tenta tudo: colo, peito, mamadeira, passeio, ruído branco… e nada parece “resolver”.</p>
+
+            <div style="height:12px"></div>
+            <div class="videoBox">
+              <div class="videoFrame">
+                <iframe
+                  src="https://player.vimeo.com/video/1151232365?autoplay=1&muted=1&loop=1&background=1&playsinline=1&title=0&byline=0&portrait=0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="eager">
+                </iframe>
+              </div>
+              <div class="videoCaption">Se isso te representa, o guia te dá um caminho simples pra agir com calma.</div>
+            </div>
+
+            <button class="toggleBtn" type="button" data-toggle="check2" aria-expanded="false">
+              Abrir checklist do choro <span class="small">3 minutos em ordem</span>
+              <span class="arrow">▾</span>
+            </button>
+            <div class="toggleBox" id="check2">
+              <ul>
+                <li>Fralda e desconforto (roupa apertada, etiqueta, posição).</li>
+                <li>Fome (sinais: busca, boca, irritação crescente).</li>
+                <li>Calor/frio (pescoço e costas são melhor referência).</li>
+                <li>Sono (bocejo, esfregar olhos, irritação sem motivo).</li>
+                <li>Cólica/gases (pernas, barriga dura): posição e pausa.</li>
+              </ul>
+            </div>
+
+            <div class="list">
+              <div class="li">
+                <div class="ico3d"><span>🔎</span></div>
+                <span class="txt"><b>Você não sabe diferenciar</b> fome, sono, desconforto, calor, fralda, cólica.</span>
+              </div>
+              <div class="li">
+                <div class="ico3d"><span>🧊</span></div>
+                <span class="txt"><b>Você trava</b> e começa a “atirar pra todo lado” — e se culpa depois.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card" style="background: rgba(239,234,228,.78);">
+          <h3>🧡 O ponto é simples:</h3>
+          <p>
+            A maioria dos pais não precisa de mais informação… precisa de <b>clareza</b> e um <b>passo a passo real</b>.
+            Esse guia foi escrito pra você aplicar no dia seguinte, sem ficar “pesquisando 50 opiniões”.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="sectionTitle">Veja o clima da experiência</h2>
+        <div class="videoBox">
+          <div class="videoFrame">
+            <iframe
+              src="https://player.vimeo.com/video/1151213822?autoplay=1&muted=1&loop=1&background=1&playsinline=1&title=0&byline=0&portrait=0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+              loading="eager">
+            </iframe>
+          </div>
+          <div class="videoCaption">
+            Não é sobre “ser perfeito”. É sobre deixar o dia menos pesado e o bebê mais confortável.
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <h2 class="sectionTitle">Feedbacks de quem já aplicou</h2>
+        <div class="reviews">
+          <div class="reviewCard">
+            <div class="reviewTop">
+              <div class="stars">★★★★★</div>
+              <div style="color:rgba(30,30,30,.55); font-size:12.5px;">Há 2 dias</div>
+            </div>
+            <p><b>“Parecia que eu tava falhando.”</b> O checklist do choro me deu uma ordem e eu parei de tentar 10 coisas ao mesmo tempo. Só isso já mudou meu dia.</p>
+          </div>
+
+          <div class="reviewCard">
+            <div class="reviewTop">
+              <div class="stars">★★★★★</div>
+              <div style="color:rgba(30,30,30,.55); font-size:12.5px;">Hoje</div>
+            </div>
+            <p><b>“O guia é simples e direto.”</b> Eu consegui organizar uma rotina realista e diminuiu muito aquela ansiedade de “e agora?”.</p>
+          </div>
+
+          <div class="reviewCard">
+            <div class="reviewTop">
+              <div class="stars">★★★★★</div>
+              <div style="color:rgba(30,30,30,.55); font-size:12.5px;">Há 1 semana</div>
+            </div>
+            <p><b>“Valeu mais do que eu paguei.”</b> Não é milagre, mas é clareza. E clareza no caos do bebê… é ouro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="sectionTitle">O que você recebe (objetivo e sem enrolação)</h2>
+        <div class="grid2">
+          <div class="card">
+            <h3>📘 Guia 0–12 meses</h3>
+            <p>Estruturado por fases (0–3, 4–6, 7–9, 10–12) com checklists, “o que fazer quando…” e rotinas simples.</p>
+
+            <button class="toggleBtn" type="button" data-toggle="check3" aria-expanded="false">
+              Ver situações do dia a dia <span class="small">banho, soneca, noite</span>
+              <span class="arrow">▾</span>
+            </button>
+            <div class="toggleBox" id="check3">
+              <ul>
+                <li>Banho sem crise: sequência curta e previsível.</li>
+                <li>Soneca: sinais reais + ambiente + ritual.</li>
+                <li>Noite: rotina de desaceleração (sem “método mágico”).</li>
+                <li>Visitas: como manter o bebê regulado.</li>
+                <li>Passeio: o que levar e como evitar colapso.</li>
+              </ul>
+            </div>
+
+            <div class="list">
+              <div class="li"><div class="ico3d"><span>🧭</span></div><span class="txt"><b>Mapa do caos</b> — o que é normal, o que é alerta, e quando procurar ajuda.</span></div>
+              <div class="li"><div class="ico3d"><span>🛠️</span></div><span class="txt"><b>Planos prontos</b> — banho, soneca, noite, visita em casa, passeio, crises.</span></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>🧾 Checklists “anti-esquecimento”</h3>
+            <p>Pra você não depender de memória quando está exausto.</p>
+
+            <button class="toggleBtn" type="button" data-toggle="check4" aria-expanded="false">
+              Abrir checklist rápido <span class="small">pra salvar seu dia</span>
+              <span class="arrow">▾</span>
+            </button>
+            <div class="toggleBox" id="check4">
+              <ul>
+                <li>Checklist do choro (testes em ordem).</li>
+                <li>Checklist da noite (sequência curta).</li>
+                <li>Checklist do passeio (sem esquecer nada).</li>
+                <li>Checklist do dia (mínimo viável de rotina).</li>
+              </ul>
+            </div>
+
+            <div class="list">
+              <div class="li"><div class="ico3d"><span>✅</span></div><span class="txt"><b>Checklist do choro</b> (o que testar em ordem em 3 minutos)</span></div>
+              <div class="li"><div class="ico3d"><span>🧺</span></div><span class="txt"><b>Checklist do dia</b> (rotina simples e realista)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card">
+          <h3>🎁 Bônus rápido (pra aumentar a chance de você aplicar)</h3>
+          <p>
+            <b>“Guia de frases prontas”</b> pra quando alguém vem te julgar ou dar palpite. Sim, isso economiza energia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="sectionTitle">O que muda na prática</h2>
+        <div class="grid2">
+          <div class="card">
+            <h3>😮‍💨 Você para de agir no desespero</h3>
+            <p>Você tem um caminho claro pra seguir quando o bebê chora, quando a noite desanda e quando a rotina “some”.</p>
+          </div>
+          <div class="card">
+            <h3>🧠 Sua cabeça fica mais leve</h3>
+            <p>Menos dúvida = menos ansiedade. Você não precisa “ser expert”, só precisa do básico organizado.</p>
+          </div>
+          <div class="card">
+            <h3>🤝 Mais união do casal</h3>
+            <p>Quando existe um plano simples, diminui briga, cobrança e aquela sensação de “tô fazendo tudo sozinho”.</p>
+          </div>
+          <div class="card">
+            <h3>💤 Mais previsibilidade no sono</h3>
+            <p>Sem prometer milagre: você aprende a montar um ritual e entender padrões (e não só “tentar tudo”).</p>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="panel">
+          <div class="panelInner">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+              <div>
+                <h2 class="sectionTitle" style="margin:0 0 6px;">Oferta de R$ 97 por R$ 19,90</h2>
+                <div style="color:var(--muted); line-height:1.5;">
+                  Esse valor é pra você <b>não pensar demais</b>. Se fizer sentido, entra. Se não fizer, vida que segue.
+                </div>
+              </div>
+              <a class="cta" href="https://pay.hotmart.com/Q103640342H" target="_blank" rel="noopener">
+                Quero aproveitar agora →
+              </a>
+            </div>
+
+            <div style="margin-top:12px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+              <div style="color:rgba(30,30,30,.72); font-size:14px;">
+                <b>Tempo restante do desconto:</b>
+              </div>
+              <div class="timer" id="timer2">30:00</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="sectionTitle">Dúvidas mais frequentes</h2>
+        <div class="faqGrid">
+          <details>
+            <summary>Como eu recebo o guia depois de comprar?</summary>
+            <p>Você recebe acesso imediato pela plataforma. Dá pra abrir no celular e começar hoje.</p>
+          </details>
+
+          <details>
+            <summary>Serve pra recém-nascido ou só pra bebê maior?</summary>
+            <p>Serve para 0 a 12 meses. O material é dividido por fases (0–3, 4–6, 7–9, 10–12).</p>
+          </details>
+
+          <details>
+            <summary>Isso substitui pediatra ou ajuda profissional?</summary>
+            <p>Não. É um guia educativo e prático. Se você notar sinais de alerta, procure um profissional.</p>
+          </details>
+
+          <details>
+            <summary>Eu sou pai/mãe de primeira viagem. Vou conseguir aplicar?</summary>
+            <p>Sim. A proposta é justamente ser simples: checklists curtos e ordem do que fazer. Sem linguagem difícil.</p>
+          </details>
+
+          <details>
+            <summary>E se meu bebê continuar chorando mesmo assim?</summary>
+            <p>O guia não promete milagre. Ele te dá um processo: observar, testar em ordem e entender padrões. Se persistir, você saberá o que relatar e quando buscar ajuda.</p>
+          </details>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="panel">
+          <div class="panelInner">
+            <h2 class="sectionTitle" style="margin:0 0 6px;">Última chamada do desconto</h2>
+            <p class="sub" style="margin:0 0 12px;">
+              Quando o cronômetro zerar, a página pode voltar ao preço normal. Se você quer, é agora.
+            </p>
+            <div class="ctaRow">
+              <a class="cta" href="https://pay.hotmart.com/Q103640342H" target="_blank" rel="noopener">
+                Sim, quero por R$ 19,90 →
+              </a>
+              <div class="timer" id="timer3">30:00</div>
+            </div>
+
+            <div class="finalImg">
+              <img src="https://wicked-aqua-cks1co3pvn.edgeone.app/IMG_1546.png" alt="Imagem final" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="foot">
+      <div class="container">
+        <div class="divider"></div>
+        <div class="center">
+          <b>Observação importante:</b> este material é educativo e prático. Não substitui avaliação médica/profissional quando necessário.
+          <div style="height:6px"></div>
+          © 2026 — Conteúdo digital. Todos os direitos reservados.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="stickyBuy">
+    <div class="container">
+      <div class="stickyInner">
+        <div class="stickText">
+          <span class="pill">de <span style="text-decoration:line-through">R$ 97</span> por <b>R$ 19,90</b></span>
+          <div class="stickTitle">Como atravessar o primeiro ano do bebê sem surtar</div>
+        </div>
+        <a class="stickCTA" href="https://pay.hotmart.com/Q103640342H" target="_blank" rel="noopener">
+          Comprar agora →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // ===== Safe storage (evita erro em Safari/privado) =====
+      function storageGet(key){
+        try { return window.localStorage.getItem(key); } catch(e){ return null; }
+      }
+      function storageSet(key, value){
+        try { window.localStorage.setItem(key, value); } catch(e){ /* ignore */ }
+      }
+
+      // ===== Countdown 30 minutes (persistent per visitor) =====
+      const KEY = "lp_bebe_offer_ends_at";
+      const DURATION_MS = 30 * 60 * 1000;
+
+      function getEnd(){
+        const now = Date.now();
+        let end = parseInt(storageGet(KEY) || "0", 10);
+        if(!end || end < now){
+          end = now + DURATION_MS;
+          storageSet(KEY, String(end));
+        }
+        return end;
+      }
+
+      const endAt = getEnd();
+
+      function pad(n){ return String(n).padStart(2,"0"); }
+      function fmt(ms){
+        const total = Math.max(0, Math.floor(ms/1000));
+        const m = Math.floor(total/60);
+        const s = total % 60;
+        return `${pad(m)}:${pad(s)}`;
+      }
+
+      const t1 = document.getElementById("timer");
+      const t2 = document.getElementById("timer2");
+      const t3 = document.getElementById("timer3");
+
+      function tick(){
+        const left = endAt - Date.now();
+        const value = fmt(left);
+        if(t1) t1.textContent = value;
+        if(t2) t2.textContent = value;
+        if(t3) t3.textContent = value;
+
+        if(left <= 0){
+          if(t1) t1.textContent = "00:00";
+          if(t2) t2.textContent = "00:00";
+          if(t3) t3.textContent = "00:00";
+        }
+      }
+      tick();
+      setInterval(tick, 250);
+
+      // ===== “Live activity” (no purchase claims) =====
+      const liveVisitorsEl = document.getElementById("liveVisitors");
+      const toastStack = document.getElementById("toastStack");
+      const checkoutUrl = "https://pay.hotmart.com/Q103640342H";
+      const rand = (min,max)=> Math.floor(Math.random()*(max-min+1))+min;
+
+      function createToast({title, message, icon="👶", time="agora"}){
+        if(!toastStack) return;
+        const el = document.createElement("div");
+        el.className = "toast";
+        el.innerHTML = `
+          <div class="miniIco"><span>${icon}</span></div>
+          <div class="txt">
+            <b>${title}</b>
+            <p>${message}</p>
+            <small>${time}</small>
+          </div>
+        `;
+        el.style.cursor = "pointer";
+        el.addEventListener("click", ()=> window.open(checkoutUrl, "_blank", "noopener"));
+        toastStack.prepend(el);
+
+        const maxToasts = 3;
+        while (toastStack.children.length > maxToasts){
+          toastStack.lastChild.remove();
+        }
+
+        setTimeout(()=> {
+          if(!el.isConnected) return;
+          el.style.opacity = "0";
+          el.style.transform = "translateY(10px)";
+          el.style.transition = "all .25s ease";
+          setTimeout(()=> { if(el.isConnected) el.remove(); }, 260);
+        }, 6500);
+      }
+
+      function updateVisitors(){
+        if(!liveVisitorsEl) return;
+        liveVisitorsEl.textContent = String(rand(7, 28));
+      }
+      updateVisitors();
+      setInterval(updateVisitors, 9000);
+
+      const names = ["Aline","Marcos","Juliana","Bruno","Fernanda","Paula","Rafa","Camila","Larissa","Mateus"];
+      const cities = ["São Paulo","Curitiba","Belo Horizonte","Foz do Iguaçu","Florianópolis","Goiânia","Recife","Porto Alegre","Campinas","Brasília"];
+
+      const toasts = [
+        ()=> createToast({ title:"Pessoa lendo agora", message:`${names[rand(0,9)]} de ${cities[rand(0,9)]} abriu a parte do sono`, icon:"😴", time:"agora" }),
+        ()=> createToast({ title:"Atenção", message:"A oferta está com tempo rodando. Se fizer sentido, aproveite agora.", icon:"⏳", time:"agora" }),
+        ()=> createToast({ title:"Dica rápida", message:"Choro do nada: fralda → fome → temperatura → sono → gases.", icon:"🧠", time:"agora" }),
+        ()=> createToast({ title:"Checklist aberto", message:`${names[rand(0,9)]} abriu o “Checklist do choro”`, icon:"✅", time:"agora" }),
+        ()=> createToast({ title:"Aviso", message:"O preço pode voltar ao normal ao zerar o cronômetro.", icon:"⚡", time:"agora" })
+      ];
+
+      setTimeout(()=> toasts[rand(0,toasts.length-1)](), 3800);
+      setInterval(()=> toasts[rand(0,toasts.length-1)](), 14000);
+
+      // ===== Toggle buttons for checklists =====
+      document.querySelectorAll('[data-toggle]').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const id = btn.getAttribute('data-toggle');
+          const box = document.getElementById(id);
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          if(box){
+            box.style.display = expanded ? 'none' : 'block';
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
